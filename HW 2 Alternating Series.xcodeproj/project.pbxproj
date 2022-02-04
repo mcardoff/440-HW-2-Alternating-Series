@@ -20,6 +20,7 @@
 		2C36D47D27ACC20C0090028B /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C36D47C27ACC20C0090028B /* Calculator.swift */; };
 		2C36D47E27ACC20C0090028B /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C36D47C27ACC20C0090028B /* Calculator.swift */; };
 		2C36D47F27ACC20C0090028B /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C36D47C27ACC20C0090028B /* Calculator.swift */; };
+		2C36D4C827ADDB930090028B /* CorePlot in Frameworks */ = {isa = PBXBuildFile; productRef = 2C36D4C727ADDB930090028B /* CorePlot */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C36D4C827ADDB930090028B /* CorePlot in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +181,9 @@
 			dependencies = (
 			);
 			name = "HW 2 Alternating Series (macOS)";
+			packageProductDependencies = (
+				2C36D4C727ADDB930090028B /* CorePlot */,
+			);
 			productName = "HW 2 Alternating Series (macOS)";
 			productReference = 2C36D44D27ACC1A90090028B /* HW 2 Alternating Series.app */;
 			productType = "com.apple.product-type.application";
@@ -254,6 +259,9 @@
 				Base,
 			);
 			mainGroup = 2C36D43A27ACC1A60090028B;
+			packageReferences = (
+				2C36D4C627ADDB930090028B /* XCRemoteSwiftPackageReference "core-plot" */,
+			);
 			productRefGroup = 2C36D44827ACC1A90090028B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -711,6 +719,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2C36D4C627ADDB930090028B /* XCRemoteSwiftPackageReference "core-plot" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/core-plot/core-plot";
+			requirement = {
+				branch = "release-2.4";
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2C36D4C727ADDB930090028B /* CorePlot */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C36D4C627ADDB930090028B /* XCRemoteSwiftPackageReference "core-plot" */;
+			productName = CorePlot;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2C36D43B27ACC1A60090028B /* Project object */;
 }

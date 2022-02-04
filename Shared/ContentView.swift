@@ -6,6 +6,9 @@
 //
 
 import SwiftUI
+import CorePlot
+
+typealias plotDataType = [CPTScatterPlotField : Double]
 
 struct ContentView: View {
     
