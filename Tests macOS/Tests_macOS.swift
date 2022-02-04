@@ -21,6 +21,10 @@ class Tests_macOS: XCTestCase {
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
+    
+    func testSeries() throws {
+        return
+    }
 
     func testExample() throws {
         // UI tests must launch the application that they test.

@@ -17,6 +17,9 @@
 		2C36D46B27ACC1AA0090028B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C36D44127ACC1A70090028B /* ContentView.swift */; };
 		2C36D46C27ACC1AA0090028B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C36D44227ACC1A90090028B /* Assets.xcassets */; };
 		2C36D46D27ACC1AA0090028B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C36D44227ACC1A90090028B /* Assets.xcassets */; };
+		2C36D47D27ACC20C0090028B /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C36D47C27ACC20C0090028B /* Calculator.swift */; };
+		2C36D47E27ACC20C0090028B /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C36D47C27ACC20C0090028B /* Calculator.swift */; };
+		2C36D47F27ACC20C0090028B /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C36D47C27ACC20C0090028B /* Calculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,7 @@
 		2C36D46027ACC1AA0090028B /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C36D46427ACC1AA0090028B /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		2C36D46627ACC1AA0090028B /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		2C36D47C27ACC20C0090028B /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 			children = (
 				2C36D44027ACC1A70090028B /* HW_2_Alternating_SeriesApp.swift */,
 				2C36D44127ACC1A70090028B /* ContentView.swift */,
+				2C36D47C27ACC20C0090028B /* Calculator.swift */,
 				2C36D44227ACC1A90090028B /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -301,6 +306,7 @@
 			files = (
 				2C36D46A27ACC1AA0090028B /* ContentView.swift in Sources */,
 				2C36D46827ACC1AA0090028B /* HW_2_Alternating_SeriesApp.swift in Sources */,
+				2C36D47D27ACC20C0090028B /* Calculator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +316,7 @@
 			files = (
 				2C36D46B27ACC1AA0090028B /* ContentView.swift in Sources */,
 				2C36D46927ACC1AA0090028B /* HW_2_Alternating_SeriesApp.swift in Sources */,
+				2C36D47E27ACC20C0090028B /* Calculator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +335,7 @@
 			files = (
 				2C36D46727ACC1AA0090028B /* Tests_macOSLaunchTests.swift in Sources */,
 				2C36D46527ACC1AA0090028B /* Tests_macOS.swift in Sources */,
+				2C36D47F27ACC20C0090028B /* Calculator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
