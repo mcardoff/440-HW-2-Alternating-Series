@@ -22,8 +22,20 @@ class Tests_macOS: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
     
+    // find the following sum
+    //        N
+    //       ___        n(n + 1)
+    //       \    n  =  --------
+    //       /__            2
+    //       n=1
     func testSeries() throws {
-        return
+        // test sum of n, gauss formula
+        let calc = Calculator()
+        let n = 100
+        let actual = Double(n * (n+1) / 2)
+        let calculated = calc.calculateFiniteSum(function: {(n:Int) -> Double in return	Double(n)}, minimum: 1, maximum: n)
+        
+        XCTAssertEqual(actual, calculated, accuracy: 1.0e-15, "Not accurate enough")
     }
 
     func testExample() throws {
