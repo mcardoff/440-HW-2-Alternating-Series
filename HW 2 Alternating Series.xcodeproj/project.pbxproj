@@ -36,6 +36,12 @@
 		2CA4FCA227ADF73700D2DDF5 /* CorePlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA4FCA127ADF73700D2DDF5 /* CorePlot.swift */; };
 		2CA4FCA327ADF73700D2DDF5 /* CorePlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA4FCA127ADF73700D2DDF5 /* CorePlot.swift */; };
 		2CA4FCA427ADF73700D2DDF5 /* CorePlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA4FCA127ADF73700D2DDF5 /* CorePlot.swift */; };
+		2CA4FCA627AF05C000D2DDF5 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA4FCA527AF05C000D2DDF5 /* TextView.swift */; };
+		2CA4FCA727AF05C000D2DDF5 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA4FCA527AF05C000D2DDF5 /* TextView.swift */; };
+		2CA4FCA827AF05C000D2DDF5 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA4FCA527AF05C000D2DDF5 /* TextView.swift */; };
+		2CA4FCAA27AF05E300D2DDF5 /* TextExportDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA4FCA927AF05E300D2DDF5 /* TextExportDocument.swift */; };
+		2CA4FCAB27AF05E300D2DDF5 /* TextExportDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA4FCA927AF05E300D2DDF5 /* TextExportDocument.swift */; };
+		2CA4FCAC27AF05E300D2DDF5 /* TextExportDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA4FCA927AF05E300D2DDF5 /* TextExportDocument.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +80,8 @@
 		2CA4FC9927ADF64E00D2DDF5 /* ChangingPlotParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangingPlotParameters.swift; sourceTree = "<group>"; };
 		2CA4FC9D27ADF6FC00D2DDF5 /* PlotClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlotClass.swift; sourceTree = "<group>"; };
 		2CA4FCA127ADF73700D2DDF5 /* CorePlot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CorePlot.swift; sourceTree = "<group>"; };
+		2CA4FCA527AF05C000D2DDF5 /* TextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		2CA4FCA927AF05E300D2DDF5 /* TextExportDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextExportDocument.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +139,8 @@
 				2CA4FC9527ADF63500D2DDF5 /* PlotDataClass.swift */,
 				2CA4FC9127ADF61000D2DDF5 /* CalculatePlotData.swift */,
 				2CA4FC9927ADF64E00D2DDF5 /* ChangingPlotParameters.swift */,
+				2CA4FCA927AF05E300D2DDF5 /* TextExportDocument.swift */,
+				2CA4FCA527AF05C000D2DDF5 /* TextView.swift */,
 				2C36D44227ACC1A90090028B /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -343,8 +353,10 @@
 				2CA4FC9227ADF61000D2DDF5 /* CalculatePlotData.swift in Sources */,
 				2CA4FC9627ADF63500D2DDF5 /* PlotDataClass.swift in Sources */,
 				2C36D46827ACC1AA0090028B /* HW_2_Alternating_SeriesApp.swift in Sources */,
+				2CA4FCA627AF05C000D2DDF5 /* TextView.swift in Sources */,
 				2C36D47D27ACC20C0090028B /* Calculator.swift in Sources */,
 				2CA4FC9A27ADF64E00D2DDF5 /* ChangingPlotParameters.swift in Sources */,
+				2CA4FCAA27AF05E300D2DDF5 /* TextExportDocument.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,8 +370,10 @@
 				2CA4FC9327ADF61000D2DDF5 /* CalculatePlotData.swift in Sources */,
 				2CA4FC9727ADF63500D2DDF5 /* PlotDataClass.swift in Sources */,
 				2C36D46927ACC1AA0090028B /* HW_2_Alternating_SeriesApp.swift in Sources */,
+				2CA4FCA727AF05C000D2DDF5 /* TextView.swift in Sources */,
 				2C36D47E27ACC20C0090028B /* Calculator.swift in Sources */,
 				2CA4FC9B27ADF64E00D2DDF5 /* ChangingPlotParameters.swift in Sources */,
+				2CA4FCAB27AF05E300D2DDF5 /* TextExportDocument.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,8 +396,10 @@
 				2CA4FC9427ADF61000D2DDF5 /* CalculatePlotData.swift in Sources */,
 				2CA4FC9827ADF63500D2DDF5 /* PlotDataClass.swift in Sources */,
 				2C36D46527ACC1AA0090028B /* Tests_macOS.swift in Sources */,
+				2CA4FCA827AF05C000D2DDF5 /* TextView.swift in Sources */,
 				2C36D47F27ACC20C0090028B /* Calculator.swift in Sources */,
 				2CA4FC9C27ADF64E00D2DDF5 /* ChangingPlotParameters.swift in Sources */,
+				2CA4FCAC27AF05E300D2DDF5 /* TextExportDocument.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

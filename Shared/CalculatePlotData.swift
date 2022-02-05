@@ -58,11 +58,11 @@ class CalculatePlotData: ObservableObject {
         await resetCalculatedTextOnMainThread()
         
         var plotData :[plotDataType] =  []
-        for n in 1 ..< 1000 {
+        for n in 3 ..< 1000 {
             let s1Double = calculator.calculateFiniteSum(
-                function: calculator.sumOneTerm(n:), minimum: 0, maximum: 2*n)
+                function: calculator.sumOneTerm(n:), minimum: 1, maximum: 2*n)
             let s3Double = calculator.calculateFiniteSum(
-                function: calculator.sumThreeTerm(n:), minimum: 0, maximum: n)
+                function: calculator.sumThreeTerm(n:), minimum: 1, maximum: n)
             //create x values here
             let x = Double(n)
             let logx = log10(x)

@@ -24,7 +24,7 @@ struct ContentView: View {
     @State var s3err: String = "Not Defined"
     
     var body: some View {
-        VStack {
+        HStack {
             CorePlot(dataForPlot: $plotData.plotArray[0].plotData, changingPlotParameters: $plotData.plotArray[0].changingPlotParameters)
                 .setPlotPadding(left: 10)
                 .setPlotPadding(right: 10)
@@ -33,72 +33,74 @@ struct ContentView: View {
                 .padding()
             
             Divider()
-            /*
-            HStack(alignment: .center) {
-                Text("N:")
-                    .font(.callout)
-                    .bold()
-                TextField("Enter Max Terms", text: $maxTerms, onCommit: self.calculateSums)
-                    .frame(width: 100)
-                
-            }.padding()
             
-            HStack {
-                // Boxes that contain series values
-                VStack {
-                    HStack {
-                        Text("S(1):")
-                            .font(.callout)
-                            .bold().frame(width: 50)
-                        TextField("S1", text: $s1sum).frame(width: 100)
-                    }.padding()
+            VStack {
+                HStack(alignment: .center) {
+                    Text("N:")
+                        .font(.callout)
+                        .bold()
+                    TextField("Enter Max Terms", text: $maxTerms, onCommit: self.calculateSums)
+                        .frame(width: 100)
                     
-                    HStack {
-                        Text("S(2):")
-                            .font(.callout)
-                            .bold().frame(width: 50)
-                        TextField("S2", text: $s2sum).frame(width: 100)
-                    }.padding()
-                    
-                    HStack {
-                        Text("S(3):")
-                            .font(.callout)
-                            .bold().frame(width: 50)
-                        TextField("S3", text: $s3sum).frame(width: 100)
-                    }.padding()
-                }
-                // Errors wrt to S3
-                VStack {
-                    HStack {
-                        Text("S(1) Err:")
-                            .font(.callout)
-                            .bold().frame(width: 50)
-                        TextField("S1", text: $s1err).frame(width: 100)
-                    }.padding()
-                    
-                    HStack {
-                        Text("S(2) Err:")
-                            .font(.callout)
-                            .bold().frame(width: 50)
-                        TextField("S2", text: $s2err).frame(width: 100)
-                    }.padding()
-                    
-                    HStack {
-                        Text("S(3) Err:")
-                            .font(.callout)
-                            .bold().frame(width: 50)
-                        TextField("S3", text: $s3err).frame(width: 100)
-                    }.padding()
-                }
+                }.padding()
                 
-            }
-            Button("Calculate Series", action: { self.calculateSums() } )
-                .padding()
-            */
-            HStack{
-                Button("exp(-x)", action: {
-                    Task.init{ await self.calculatePlots() } } )
+                HStack {
+                    // Boxes that contain series values
+                    VStack {
+                        HStack {
+                            Text("S(1):")
+                                .font(.callout)
+                                .bold().frame(width: 50)
+                            TextField("S1", text: $s1sum).frame(width: 100)
+                        }.padding()
+                        
+                        HStack {
+                            Text("S(2):")
+                                .font(.callout)
+                                .bold().frame(width: 50)
+                            TextField("S2", text: $s2sum).frame(width: 100)
+                        }.padding()
+                        
+                        HStack {
+                            Text("S(3):")
+                                .font(.callout)
+                                .bold().frame(width: 50)
+                            TextField("S3", text: $s3sum).frame(width: 100)
+                        }.padding()
+                    }
+                    // Errors wrt to S3
+                    VStack {
+                        HStack {
+                            Text("S(1) Err:")
+                                .font(.callout)
+                                .bold().frame(width: 50)
+                            TextField("S1", text: $s1err).frame(width: 100)
+                        }.padding()
+                        
+                        HStack {
+                            Text("S(2) Err:")
+                                .font(.callout)
+                                .bold().frame(width: 50)
+                            TextField("S2", text: $s2err).frame(width: 100)
+                        }.padding()
+                        
+                        HStack {
+                            Text("S(3) Err:")
+                                .font(.callout)
+                                .bold().frame(width: 50)
+                            TextField("S3", text: $s3err).frame(width: 100)
+                        }.padding()
+                    }
+                    
+                }
+                Button("Calculate Series", action: { self.calculateSums() } )
                     .padding()
+                
+                HStack{
+                    Button("Plot Err", action: {
+                        Task.init{ await self.calculatePlots() } } )
+                        .padding()
+                }
             }
         }
     }

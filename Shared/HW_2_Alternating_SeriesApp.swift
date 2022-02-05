@@ -9,9 +9,23 @@ import SwiftUI
 
 @main
 struct HW_2_Alternating_SeriesApp: App {
+    
+    @StateObject var plotData = PlotClass()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabView {
+                ContentView()
+                    .environmentObject(plotData)
+                    .tabItem {
+                        Text("Plot")
+                    }
+                TextView()
+                    .environmentObject(plotData)
+                    .tabItem {
+                        Text("Text")
+                    }
+            }
         }
     }
 }
